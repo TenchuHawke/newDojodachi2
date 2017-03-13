@@ -1,0 +1,73 @@
+@{ ViewData["Title"] = "Dojogachi"; }
+<div class="ninja">
+    <h1>DojoGachi!</h1>
+</div>
+<h2>@ViewBag.results </h2>
+<div class="ninja">
+    <img src="@ViewBag.image" alt="Ninja!" width="300px">
+    <br>
+    <h3>Make @ViewBag.pronoun2 The Best</h3>
+</div>
+<table>
+    <tr>
+        <th>
+            <h1>
+                @ViewBag.happiness
+            </h1>
+        </th>
+        <th>
+            <h1>
+                @ViewBag.energy
+            </h1>
+        </th>
+
+        <th>
+            <h1>
+                @ViewBag.fullness
+            </h1>
+        </th>
+
+        <th>
+            <h1>
+                @ViewBag.meals
+            </h1>
+        </th>
+
+    </tr>
+    <tr>
+        <td>
+            <h2>Happiness</h2>
+        </td>
+        <td>
+            <h2>Energy</h2>
+        </td>
+        <td>
+            <h2>Fullness</h2>
+        </td>
+        <td>
+            <h2>Meals</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <form action="Dojogachi/Play" , method="get">
+                <button type="submit">Play With</button>
+            </form>
+        </td>
+        <td>
+            <form action="Dojogachi/Work" , method="get">
+                <button type="submit">Put to Work</button>
+            </form>
+        </td>
+        <td>
+            <form action="Dojogachi/Sleep" , method="get">
+                <button type="submit">Let Sleep</button>
+            </form>
+        </td>
+        <td>
+            <form action="Dojogachi/Feed" , method="get">
+                <button type="submit">Feed</button>
+            </form>
+        </td>
+    </tr>
+</table>

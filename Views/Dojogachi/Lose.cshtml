@@ -1,0 +1,9 @@
+@{ ViewData["Title"] = "Home Page"; }
+<h1>DojoGachi!</h1>
+<h1>@ViewBag.results</h1>
+<h1>YOU LOSE!!!</h1> @{ if(ViewBag.reason=="run") {
+<img src="/images/hobostick.jpeg" alt="Ran Away"> } else {
+<img src="/images/tombstone.gif" alt="Dead"> }}
+<form action="/" , method="get">
+    <button type="submit">Play Again</button>
+</form>

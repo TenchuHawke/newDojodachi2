@@ -1,0 +1,10 @@
+/*Write all of your CSS here*/
+
+table th,
+td {
+    text-align: center;
+}
+
+.ninja {
+    margin-left: 200px;
+}
